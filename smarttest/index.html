@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smart City Dashboard</title>
+
+<link rel="stylesheet" href="style.css">
+
+<!-- Leaflet -->
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+<!-- Routing (ถนนจริง) -->
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.css">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+    
+<button id="myLocationBtn">
+📍 ตำแหน่งฉัน
+</button>
+
+<header>
+<h1>🌍 Smart City Dashboard</h1>
+<div id="clock"></div>
+</header>
+
+<section class="dashboard">
+
+<div class="card">
+<h3>🚌 Bus</h3>
+<div id="busStatus">Tracking...</div>
+</div>
+
+<div class="card">
+<h3>🚦 Traffic</h3>
+<div id="trafficLevel">--</div>
+</div>
+
+<div class="card">
+<h3>🌤 Weather</h3>
+<div id="weather">Loading...</div>
+</div>
+
+<div class="card">
+<h3>🌫 AQI</h3>
+<div id="aqiValue">Loading...</div>
+</div>
+
+</section>
+
+<div id="map"></div>
+
+<h2>📈 Traffic Analytics</h2>
+<canvas id="trafficChart"></canvas>
+
+<!-- JS -->
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<script src="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
